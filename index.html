@@ -8,7 +8,7 @@
 <body>
 
 <div class="box1">
-    <button onclick="openLink()">Open Star Bharat HD</button>
+    <a href="#" onclick="openLink()">Open Star Bharat HD</a>
 </div>
 
 <iframe id="hiddenFrame" style="display:none;"></iframe>
@@ -17,6 +17,7 @@
 function openLink() {
     var iframe = document.getElementById('hiddenFrame');
     iframe.src = 'https://amitb3669.github.io/all-in-one-tataplay-web.php/star-bharat.html';
+    return false; // Prevent default link behavior
 }
 </script>
 
